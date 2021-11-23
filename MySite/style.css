@@ -4,10 +4,7 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
+/* header */
 .nav-top {
   width: 100%;
   background-color: #EC715F;
@@ -38,9 +35,13 @@ a {
 }
 
 .nav-text-color {
-  color: #FAFAFA
+  color: #FAFAFA;
+  text-decoration: none;
 }
 
+
+
+/* main visual */
 .main-visual {
   background-image: url(img/mv.png);
   background-size: cover;
@@ -63,7 +64,9 @@ a {
   font-size: 20px;
 }
 
-.portfolio {
+
+/* portfolio */
+.portfolio, .profile {
   background-color: #ECEFF1;
 }
 
@@ -76,13 +79,15 @@ a {
   margin-left: auto;
 }
 
-.portfolio-text-top, .feature-text-top {
+.portfolio-text-top, .feature-text-top,
+.profile-text-top, .contact-text-top {
   position: relative;
   font-size: 32px;
   color: #000;
 }
 
-.portfolio-text-top::after, .feature-text-top::after {
+.portfolio-text-top::after, .feature-text-top::after,
+.profile-text-top::after, .contact-text-top::after {
   content: '';
   display: block;
   position: absolute;
@@ -94,14 +99,15 @@ a {
   background-color: #EC715F;
 }
 
-.portfolio-text, .feature-text {
+.portfolio-text, .feature-text,
+.profile-text, .contact-text {
   font-size: 16px;
   color: #000;
   margin-top: 38px;
   margin-bottom: 30px;
 }
 
-.portfolio-image {
+.portfolio-image, .strength, .contact-area {
   display: flex;
   flex-wrap: wrap;
 }
@@ -117,10 +123,12 @@ a {
   margin-right: 0;
 }
 
-.portfolio-image-box:nth-last-dhild(-n + 3) {
+.portfolio-image-box:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
+
+/* feature */
 .feature-main {
   text-align: center;
   padding-top: 90px;
@@ -130,6 +138,136 @@ a {
   margin-left: auto;
 }
 
+.fa {
+  font-size: 60px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.strength {
+  width: 980px;
+  padding-bottom: 90px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.strength-box {
+  width: 320px;
+}
+
+.strength-title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+.strength-text {
+  font-size: 16px;
+  color: #000;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.strength-text:nht-child(3) {
+  margin-right: 0;
+}
+
+/* profile */
+
+.profile-main {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px; 
+  width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.profile-body {
+  display: flex;
+}
+
+.profile-image-box {
+  width: 50%;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.profile-text-box {
+  width: 512px;
+  text-align: left;
+
+}
+
+.profile-title {
+  font-size: 20px;
+}
+
+.profile-about, .profile-skill {
+  font-size: 16px;
+  color: #000;
+  margin-top: 5px;
+  margin-left: auto;
+}
+
+.profile-about {
+  margin-bottom: 20px;
+}
+
+
+/* contact */
+.contact-main {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px; 
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-group {
+  padding-top: 30px;
+  display: flex;
+}
+
+.contact-box {
+  width: 50%;
+  text-align: left;
+}
+
+.contact-content {
+  width:130px;
+}
+
+.contact-mail, .sns-title {
+  font-size: 20px;
+}
+
+.contact-adress {
+  margin-top: 5px;
+}
+
+.contact-tel {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.sns-mark {
+  margin-top: 5px;
+  margin-right: 20px;
+  font-size: 50px;
+}
+
+/* footer */
 footer {
   width: 100%;
   height: 70px;
