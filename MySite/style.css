@@ -17,13 +17,14 @@ a {
 .nav-list {
   width: 1024px;
   display: flex;
+  margin-right: auto;
   margin-left: auto;
 }
 
 .nav-image {
   height:70px;
   size: cover;
-  margin: 0;
+  margin-right: auto;
   padding: 0;
   overflow: hidden;
 }
@@ -34,7 +35,10 @@ a {
   margin-right: 30px;
   margin-left: 30px;
   font-size: 16px;
-  color: #FAFAFA;
+}
+
+.nav-text-color {
+  color: #FAFAFA
 }
 
 .main-visual {
@@ -72,13 +76,13 @@ a {
   margin-left: auto;
 }
 
-.portfolio-text-top {
+.portfolio-text-top, .feature-text-top {
   position: relative;
   font-size: 32px;
   color: #000;
 }
 
-.portfolio-text-top::after {
+.portfolio-text-top::after, .feature-text-top::after {
   content: '';
   display: block;
   position: absolute;
@@ -90,7 +94,7 @@ a {
   background-color: #EC715F;
 }
 
-.portfolio-text {
+.portfolio-text, .feature-text {
   font-size: 16px;
   color: #000;
   margin-top: 38px;
@@ -115,6 +119,15 @@ a {
 
 .portfolio-image-box:nth-last-dhild(-n + 3) {
   margin-bottom: 0;
+}
+
+.feature-main {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px; 
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 footer {
