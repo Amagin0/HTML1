@@ -102,7 +102,7 @@
 .portfolio-text, .feature-text,
 .profile-text, .contact-text {
   font-size: 16px;
-  color: #000;
+  color: #000;> 
   margin-top: 38px;
   margin-bottom: 30px;
 }
